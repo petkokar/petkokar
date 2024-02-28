@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PETKO KARAGITLIEV</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    .title-pic {
+        width: 100%;
+        margin-top: 2%;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+ 
+    /* PC version */
+    @media (min-width: 768px) {
+      body {
+        display: flex;
+        height: 100vh;
+      }
+ 
+      #sidebar {
+        width: 25%;
+        height: 100%;
+        background-color: #2c3e50; /* Dark Blue-Gray */
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: fixed;
+        top: 0;
+        color: #ecf0f1; /* Light Gray */
+      }
+ 
+      #content {
+        width: 100%;
+        padding: 20px;
+        margin-left: 30%;
+      }
+ 
+      .profile-pic {
+        width: 250px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 2px solid #3498db; /* Blue */
+      }
+ 
+      nav a {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        color: #ecf0f1; /* Light Gray */
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+      }
+ 
+      nav a:hover {
+        color: #3498db; /* Blue */
+      }
+    }
+ 
+    /* Mobile version */
+    @media (max-width: 767px) {
+      body {
+        flex-direction: column;
+      }
+ 
+      #sidebar {
+        width: 100%;
+        background-color: #2c3e50; /* Dark Blue-Gray */
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        color: #ecf0f1; /* Light Gray */
+      }
+ 
+      .profile-pic {
+        width: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 2px solid #3498db; /* Blue */
+      }
+ 
+      .title-pic {
+          /* Use the mobile image for smaller screens */
+          content: url('https://raw.githubusercontent.com/M370D1/M370D1.github.io/main/title-pic-mobile.jpg');
+      }
+ 
+      nav {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+ 
+      nav a {
+        text-decoration: none;
+        color: #ecf0f1; /* Light Gray */
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+      }
+ 
+      nav a:hover {
+        color: #3498db; /* Blue */
+      }
+ 
+      #content {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <img src="https://avatars.githubusercontent.com/u/145066270?v=4" alt="Profile Picture" class="profile-pic">
+    <h2>PETKO KARAGITLIEV</h2>
+    <h3>Quality Assurance Engineer</h3>
+ 
+    <!-- Navigation Links -->
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+ 
+  <!-- Main Content -->
+  <div id="content">
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+            <p>
+                Greetings! I'm Petko Karagitliev, a dedicated Quality Assurance Engineer with a focus on ensuring software
+                quality and delivering exceptional user experiences. With a keen eye for detail and a passion for
+                perfection, I contribute to the success of projects through meticulous testing and defect resolution.
+            </p>
+            <p>
+                In addition to my role as a QA Engineer, I've recently ventured into the world of JavaScript web development.
+                Navigating the dynamic landscape of full-stack development, I'm honing my skills in JavaScript, exploring
+                frontend frameworks, and diving into the intricacies of backend technologies.
+            </p>
+            <p>
+                My primary focus remains on maintaining the highest standards of software quality. From crafting
+                comprehensive test plans to conducting thorough test cases, I thrive in ensuring that every piece of
+                software meets and exceeds expectations. My dedication to excellence extends beyond QA as I leverage
+                JavaScript to enhance my capabilities in web development.
+            </p>
+            <p>
+                Currently on the path to becoming someone who brings a great value to the company I work for and makes the difference in software testing, driven by an unwavering commitment
+                to excellence, I embrace every challenge as an opportunity for continuous learning, recognizing that
+                the journey of acquiring new skills is not just a pursuit, but a transformative path to unlocking endless
+                possibilities.
+            </p>
+            <p>
+              I love making sure software works well and helping teams deliver great products. Let's connect and talk about how we can work together!
+            </p>
+    </section>
+ 
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <a href="https://www.rewardgateway.com/" target="_blank"><img src="https://www.rewardgateway.com/hs-fs/hubfs/Edenred_RewardGateway_Logo.png?width=2000&height=437&name=Edenred_RewardGateway_Logo.png" alt="Brief" width="400" height="180"></a>
+        <p>Reward Gateway is culture- and client-driven. Since 2006, it's  been right by the side of the world’s most innovative HR people, giving them the tools and products they need to engage their people and drive company success.</p>
+        <p>I’ve tested all the main functionalities and I’ve wrote more than 100 tests with Cypress </p>
+    </section>
+ 
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+        <img src="data:image/jpeg;base64,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"
+             alt="Supernova Networks" width="200" height="200">
+      <h3>Quality Assurance Engineer</h3>
+        <p>Supernova Networks · Full-time</p>
+        <p>Jan 2021 - Dec 2023 · 3 yrs</p>
+        <p>Chicago, Illinois, United States</p>
+        <ul>
+            <li>Followed system development life-cycle (SDLC) process</li>
+            <li>Created detailed test plans, test cases, and executed them</li>
+            <li>Involved in project planning, coordination, and implemented QA methodology</li>
+            <li>Conducted Smoke, Integration, Functional, Regression, Exploratory, and Production testing</li>
+            <li>Tested cross-browser functionality of browsers: Internet Explorer, Chrome, Safari, and Firefox</li>
+            <li>Wrote and updated Cypress test scripts</li>
+        </ul>
+        <img src="https://media.licdn.com/dms/image/C560BAQH_dKm8mmSGWQ/company-logo_200_200/0/1630626463696/hirewebsolutions_logo?e=1717027200&v=beta&t=-lzqZA1j9KW7cL0uInbmRG-PhC4m-4lFeQCI6Zpcc6M"
+             alt="HireWebSolutions" width="200" height="170">
+        <p>HireWebSolutions · Full-time</p>
+        <p>Jun 2020 - Nov 2020 · 6 mos</p>
+        <p>Chicago, Illinois, United States</p>
+        <ul>
+            <li>Test Planning: I organized and strategized our testing approaches, outlining what needed testing and how to do it effectively.</li>
+            <li>Test Case Design: I crafted comprehensive test cases, ensuring they covered all aspects of the software to guarantee thorough testing.</li>
+            <li>Functional Testing: I verified that our software performed its intended functions accurately, identifying and addressing any issues.</li>
+            <li>Regression Testing: I oversaw regression testing processes to confirm that new updates or features didn't disrupt existing functionalities.</li>
+            <li>Defect Management: I managed the identification, reporting, and resolution of software defects, ensuring they were addressed promptly and efficiently.</li>
+        </ul>
+    </section>
+ 
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+        <p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="36" height="36" alt="JS" />
+          <img src="https://static-00.iconduck.com/assets.00/cypress-icon-2048x2048-swmlmjca.png" width="36" height="36" alt="Cypress" />
+          <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" width="36" height="36" alt="Postman" />
+          <img src="https://jmeter.apache.org/images/jmeter_square.svg" width="36" height="36" alt="jmeter" />
+          <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" />
+          <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" />
+          <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" />
+          <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" />
+        </p>
+ 
+        <ul>
+            <li> Expertise in writing Cypress test scripts and JavaScript language </li>
+            <li> Proficient in SDLC and QA Testing Processes</li>
+            <li> Comprehensive knowledge in Black Box, Grey Box, White Box, Functional, and Non-Functional testing</li>
+            <li> Expertise in Smoke, Regression testing</li>
+            <li> Proficient in writing and executing SQL queries</li>
+            <li> Technical and documentation skills</li>
+            <li> Efficient in crafting Test Plans and Test Cases aligned with business requirements and use cases</li>
+            <li> Expertise in combining manual and automated QA test methods for optimal results</li>
+            <li> Quick learner with the ability to adapt to new tools and technologies</li>
+            <li> Strong problem-solving, multi-tasking, and decision-making skills</li>
+            <li> Detail-oriented, self-motivated, and well-organized</li>
+            <li> Exceptional critical thinking abilities</li>
+        </ul>
+    </section>
+ 
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contacts</h2>
+        <p>Gmail: pecataivanov@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/petko-karagitliev-70b2092b0/" target="_blank">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-png.png" alt="LinkedIn Profile" width="100" height="30">
+        </a></p>
+        <p><a href="https://github.com/petkokar" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="GitHub Profile" width="30" height="30">
+        </a></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+  </div>
+ 
+  <script>
+  if (window.innerWidth <= 767) {
+    // Smooth scrolling for anchor links in the mobile version
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+ 
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+ 
+        if (targetElement) {
+          const yOffset = -320; // Adjust this value based on your top bar's height
+          const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+ 
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      });
+    });
+  } else {
+    // Smooth scrolling for anchor links in the PC version
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+ 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  }
+</script>
+ 
+ 
+</body>
+</html>
